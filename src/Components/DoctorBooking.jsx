@@ -258,7 +258,7 @@ const DoctorBooking = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
                 {doctor.doctorImage?.filename ? (
                   <img
-                    src={`http://localhost:5000/uploads/doctors/${doctor.doctorImage.filename}`}
+                    src={` https://backend-voz7.onrender.com/uploads/doctors/${doctor.doctorImage.filename}`}
                     alt={doctor.fullName}
                     className="w-full h-full object-cover rounded-full"
                   />

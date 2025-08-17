@@ -18,7 +18,7 @@ const ContactForm = () => {
     e.preventDefault();
     setMessage('');
     try {
-      const res = await fetch('http://localhost:5000/api/contacts', {
+      const res = await fetch(' https://backend-voz7.onrender.com/api/contacts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

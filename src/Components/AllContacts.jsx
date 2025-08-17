@@ -7,7 +7,7 @@ const AllContacts = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/contacts');
+        const res = await fetch(' https://backend-voz7.onrender.com/api/contacts');
         const data = await res.json();
         setContacts(data);
       } catch (err) {

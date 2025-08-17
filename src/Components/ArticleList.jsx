@@ -43,7 +43,7 @@ const ArticleList = ({ onEdit }) => {
             <div className="h-48 bg-gray-200 overflow-hidden">
               {article.imageUrl ? (
                 <img
-                  src={`http://localhost:5000${article.imageUrl}`}
+                  src={` https://backend-voz7.onrender.com${article.imageUrl}`}
                   alt={article.title}
                   className="h-full w-full object-cover"
                   onError={(e) => {

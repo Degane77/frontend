@@ -809,7 +809,7 @@ const DoctorManager = () => {
                   <div className="flex items-center gap-3">
                     {doctor.doctorImage?.filename ? (
                       <img
-                        src={`http://localhost:5000/uploads/doctors/${doctor.doctorImage.filename}`}
+                        src={` https://backend-voz7.onrender.com/uploads/doctors/${doctor.doctorImage.filename}`}
                         alt={doctor.fullName}
                         className="w-12 h-12 rounded-full object-cover border-2 border-white"
                         onError={(e) => {

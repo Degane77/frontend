@@ -11,7 +11,7 @@ const ContactManager = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/contacts');
+        const res = await fetch(' https://backend-voz7.onrender.com/api/contacts');
         const data = await res.json();
         setContacts(Array.isArray(data) ? data : []);
       } catch (err) {
@@ -26,7 +26,7 @@ const ContactManager = () => {
   const handleReply = async (contactId) => {
     if (!replyMsg.trim()) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/contacts/${contactId}/reply`, {
+      const res = await fetch(` https://backend-voz7.onrender.com/api/contacts/${contactId}/reply`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ reply: replyMsg })
