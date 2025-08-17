@@ -33,7 +33,7 @@ const SkeletonCard = () => (
 
 const DoctorCard = ({ doctor }) => {
   const imgSrc = doctor?.doctorImage?.filename
-    ? `${API_BASE || "http://localhost:5000"}/uploads/doctors/${doctor.doctorImage.filename}`
+    ? `${API_BASE || " https://backend-voz7.onrender.com"}/uploads/doctors/${doctor.doctorImage.filename}`
     : null;
 
   return (
