@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: ' https://backend-voz7.onrender.com', // Adjust the target to your backend server
+        target: ' https://backend-voz7.onrender.com/api', // Adjust the target to your backend server
         changeOrigin: true,
         secure: false,
       },
