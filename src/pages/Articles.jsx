@@ -102,7 +102,7 @@ const Articles = () => {
                 <div className="w-full md:w-72 h-56 md:h-auto overflow-hidden">
                   {article.imageUrl ? (
                     <img
-                      src={` https://backend-voz7.onrender.com${article.imageUrl}`}
+                      src={` https://backend-voz7.onrender.com/uploads${article.imageUrl}`}
                       alt={article.title}
                       className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
                     />
